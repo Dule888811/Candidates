@@ -108,4 +108,7 @@ C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.dll
 C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.pdb
 C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.Migrations.InitialCreate.resources
 C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.csproj.GenerateResource.cache
-C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.csprojAssemblyReference.cache
+C:\Users\pc\source\repos\Candidates\bin\Intercom.dll
+C:\Users\pc\source\repos\Candidates\bin\RestSharp.dll
+C:\Users\pc\source\repos\Candidates\bin\Intercom.pdb
+C:\Users\pc\source\repos\Candidates\bin\RestSharp.xml

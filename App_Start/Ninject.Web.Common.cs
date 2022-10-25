@@ -4,8 +4,11 @@
 namespace Candidates.App_Start
 {
     using System;
+    using System.Data.Entity;
     using System.Web;
-
+    using Candidates.Repository;
+    using Candidates.Repository.IRepository;
+    using CandidatesDBContext.Repository;
     using Microsoft.Web.Infrastructure.DynamicModuleHelper;
 
     using Ninject;
@@ -61,6 +64,8 @@ namespace Candidates.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            kernel.Bind<DbContext>().To<Models.CandidatesDBContext>().InRequestScope();
+            kernel.Bind<ICandidatesRepository>().To<CandidatesRepository>().InRequestScope();
         }        
     }
 }
