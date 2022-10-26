@@ -1,12 +1,16 @@
-﻿using System;
+﻿using Candidates.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Mvc;
 
 namespace Candidates.Repository.IRepository
 {
-    interface ICandidatesRepository
+   public interface ICandidatesRepository
     {
+        IQueryable<Candidate> Get();
+        void AddCandidate(Candidate candidate);
     }
 }

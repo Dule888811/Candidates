@@ -19,7 +19,7 @@ namespace Candidates.Migrations
                         MobilePhone = c.String(),
                         Note = c.String(),
                         employed = c.Boolean(nullable: false),
-                        changes = c.DateTime(nullable: false),
+                        changes = c.DateTime(),
                     })
                 .PrimaryKey(t => t.id)
                 .Index(t => t.JMGB, unique: true);

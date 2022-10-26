@@ -52,6 +52,7 @@ C:\Users\pc\source\repos\Candidates\bin\EntityFramework.dll
 C:\Users\pc\source\repos\Candidates\bin\EntityFramework.SqlServer.dll
 C:\Users\pc\source\repos\Candidates\bin\Gach.CollectionJson.Model.dll
 C:\Users\pc\source\repos\Candidates\bin\Gach.CollectionJson.Model.Newtonsoft.dll
+C:\Users\pc\source\repos\Candidates\bin\Intercom.dll
 C:\Users\pc\source\repos\Candidates\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 C:\Users\pc\source\repos\Candidates\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\pc\source\repos\Candidates\bin\Microsoft.Web.Infrastructure.dll
@@ -61,6 +62,7 @@ C:\Users\pc\source\repos\Candidates\bin\Ninject.Web.Common.dll
 C:\Users\pc\source\repos\Candidates\bin\Ninject.Web.Common.WebHost.dll
 C:\Users\pc\source\repos\Candidates\bin\Ninject.Web.Mvc.dll
 C:\Users\pc\source\repos\Candidates\bin\Ninject.Web.WebApi.dll
+C:\Users\pc\source\repos\Candidates\bin\RestSharp.dll
 C:\Users\pc\source\repos\Candidates\bin\System.Diagnostics.DiagnosticSource.dll
 C:\Users\pc\source\repos\Candidates\bin\System.Net.Http.Formatting.dll
 C:\Users\pc\source\repos\Candidates\bin\System.Reflection.TypeExtensions.dll
@@ -80,6 +82,7 @@ C:\Users\pc\source\repos\Candidates\bin\EntityFramework.xml
 C:\Users\pc\source\repos\Candidates\bin\EntityFramework.SqlServer.xml
 C:\Users\pc\source\repos\Candidates\bin\Gach.CollectionJson.Model.xml
 C:\Users\pc\source\repos\Candidates\bin\Gach.CollectionJson.Model.Newtonsoft.xml
+C:\Users\pc\source\repos\Candidates\bin\Intercom.pdb
 C:\Users\pc\source\repos\Candidates\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\pc\source\repos\Candidates\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\pc\source\repos\Candidates\bin\Newtonsoft.Json.xml
@@ -88,6 +91,7 @@ C:\Users\pc\source\repos\Candidates\bin\Ninject.Web.Common.xml
 C:\Users\pc\source\repos\Candidates\bin\Ninject.Web.Common.WebHost.xml
 C:\Users\pc\source\repos\Candidates\bin\Ninject.Web.Mvc.xml
 C:\Users\pc\source\repos\Candidates\bin\Ninject.Web.WebApi.xml
+C:\Users\pc\source\repos\Candidates\bin\RestSharp.xml
 C:\Users\pc\source\repos\Candidates\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\pc\source\repos\Candidates\bin\System.Net.Http.Formatting.xml
 C:\Users\pc\source\repos\Candidates\bin\System.Web.Helpers.xml
@@ -102,13 +106,10 @@ C:\Users\pc\source\repos\Candidates\bin\System.Web.WebPages.Razor.xml
 C:\Users\pc\source\repos\Candidates\bin\zh-Hans\EntityFramework.resources.dll
 C:\Users\pc\source\repos\Candidates\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
 C:\Users\pc\source\repos\Candidates\bin\tr\System.Net.Http.Formatting.resources.dll
+C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.Migrations.InitialCreate.resources
+C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.csproj.GenerateResource.cache
 C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.csproj.CoreCompileInputs.cache
 C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.csproj.CopyComplete
 C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.dll
 C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.pdb
-C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.Migrations.InitialCreate.resources
-C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.csproj.GenerateResource.cache
-C:\Users\pc\source\repos\Candidates\bin\Intercom.dll
-C:\Users\pc\source\repos\Candidates\bin\RestSharp.dll
-C:\Users\pc\source\repos\Candidates\bin\Intercom.pdb
-C:\Users\pc\source\repos\Candidates\bin\RestSharp.xml
+C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.csprojAssemblyReference.cache

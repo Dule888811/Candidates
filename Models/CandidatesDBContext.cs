@@ -10,7 +10,7 @@ namespace Candidates.Models
     {
         internal object candidate;
 
-        public DbSet<Candidate> Documents { get; set; }
-        public object Candidate { get; internal set; }
+        public DbSet<Candidate> Candidate { get; set; }
+        
     }
 }
