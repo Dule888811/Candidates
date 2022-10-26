@@ -82,30 +82,30 @@ namespace Candidates.Controllers
             }
             return View(candidate);
 
-
+        }
             // GET: Candidates/Delete/5
-            /*   public ActionResult Delete(int? id)
+               public ActionResult Delete(int? id)
                {
                    if (id == null)
                    {
                        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
                    }
-                 ///  Candidate candidate = db.Candidate.Find(id);
-                   if (candidate == null)
+                   Candidate Candidate = this._candidatesRepository.GetById((int) id);
+                   if (Candidate == null)
                    {
                        return HttpNotFound();
                    }
-                   return View(candidate); 
-        }
+                   return View(Candidate); 
+                }
 
         // POST: Candidates/Delete/5
        [HttpPost, ActionName("Delete")]
             [ValidateAntiForgeryToken]
             public ActionResult DeleteConfirmed(int id)
             {
-                Candidate candidate = db.Candidate.Find(id);
-                db.Candidate.Remove(candidate);
-                db.SaveChanges();
+            
+            this._candidatesRepository.DeleteCandidate(id);
+             
                 return RedirectToAction("Index");
             } 
 
@@ -113,11 +113,10 @@ namespace Candidates.Controllers
             {
                 if (disposing)
                 {
-                    db.Dispose();
+                this._candidatesRepository.Dispose(disposing);
                 }
                 base.Dispose(disposing);
             }
-        } */
+        } 
         }
-    }
-}
+   

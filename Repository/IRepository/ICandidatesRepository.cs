@@ -14,5 +14,7 @@ namespace Candidates.Repository.IRepository
         void AddCandidate(Candidate candidate);
         void EditCandidate(Candidate candidate);
         Candidate GetById(int id);
+        void DeleteCandidate(int id);
+         void Dispose(bool disposing);
     }
 }

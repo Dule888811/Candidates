@@ -42,5 +42,17 @@ namespace Candidates.Repository
         {
             return context.Candidate.Find(id);
         }
+
+        public void DeleteCandidate(int id)
+        {
+            Candidate cocument = this.GetById(id);
+            context.Candidate.Remove(cocument);
+            base.SaveChanges();
+        }
+
+        public void Dispose(bool disposing)
+        {
+            context.Dispose();
+        }
     }
 }
