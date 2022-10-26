@@ -1,13 +1,10 @@
-﻿using System;
+﻿using Candidates.Models;
+using Candidates.Repository.IRepository;
+using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
-using Candidates.Models;
-using Candidates.Repository.IRepository;
 
 namespace Candidates.Controllers
 {
@@ -83,31 +80,45 @@ namespace Candidates.Controllers
             return View(candidate);
 
         }
-            // GET: Candidates/Delete/5
-               public ActionResult Delete(int? id)
-               {
-                   if (id == null)
-                   {
-                       return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-                   }
-                   Candidate Candidate = this._candidatesRepository.GetById((int) id);
-                   if (Candidate == null)
-                   {
-                       return HttpNotFound();
-                   }
-                   return View(Candidate); 
-                }
+        // GET: Candidates/Delete/5
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Candidate Candidate = this._candidatesRepository.GetById((int)id);
+            if (Candidate == null)
+            {
+                return HttpNotFound();
+            }
+            return View(Candidate);
+        }
 
         // POST: Candidates/Delete/5
-       [HttpPost, ActionName("Delete")]
-            [ValidateAntiForgeryToken]
-            public ActionResult DeleteConfirmed(int id)
-            {
-            
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+
             this._candidatesRepository.DeleteCandidate(id);
-             
-                return RedirectToAction("Index");
-            } 
+
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult SearchCandidates(string searchBy, string search)
+        {
+            List<Candidate> candidates = this._candidatesRepository.SearchCandidates(searchBy, search);
+            if (candidates.Count() == 0) 
+            {
+                return Content("No rsult");
+            }
+            
+            else
+            {
+                return View(candidates);
+            }
+         }
 
             protected override void Dispose(bool disposing)
             {

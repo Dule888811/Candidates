@@ -15,6 +15,7 @@ namespace Candidates.Repository.IRepository
         void EditCandidate(Candidate candidate);
         Candidate GetById(int id);
         void DeleteCandidate(int id);
+        List<Candidate> SearchCandidates(string searchBy, string search);
          void Dispose(bool disposing);
     }
 }

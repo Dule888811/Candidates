@@ -50,6 +50,24 @@ namespace Candidates.Repository
             base.SaveChanges();
         }
 
+        public List<Candidate> SearchCandidates(string searchBy, string search)
+        {
+            if (searchBy == "FirstName")
+            {
+                return context.Candidate.Where(x => x.FirstName == search).ToList();
+            }else if (searchBy == "LastName")
+            {
+                return context.Candidate.Where(x => x.LastName == search).ToList();
+            }else if(searchBy == "JMGB") 
+             {
+                return context.Candidate.Where(x => x.JMGB.ToString() == search).ToList();
+            }else
+            {
+                return new List<Candidate>();
+            }
+            
+        } 
+
         public void Dispose(bool disposing)
         {
             context.Dispose();
