@@ -11,6 +11,6 @@ namespace Candidates.Models
         internal object candidate;
 
         public DbSet<Candidate> Candidate { get; set; }
-        
+        public object Candidates { get; internal set; }
     }
 }

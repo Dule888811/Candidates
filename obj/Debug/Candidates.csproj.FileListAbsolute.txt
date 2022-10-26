@@ -112,4 +112,3 @@ C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.csproj.CoreCompileInput
 C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.csproj.CopyComplete
 C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.dll
 C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.pdb
-C:\Users\pc\source\repos\Candidates\obj\Debug\Candidates.csprojAssemblyReference.cache

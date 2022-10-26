@@ -12,5 +12,7 @@ namespace Candidates.Repository.IRepository
     {
         IQueryable<Candidate> Get();
         void AddCandidate(Candidate candidate);
+        void EditCandidate(Candidate candidate);
+        Candidate GetById(int id);
     }
 }

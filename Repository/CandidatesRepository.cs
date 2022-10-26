@@ -33,5 +33,14 @@ namespace Candidates.Repository
             context.Candidate.Add(candidate);
             base.SaveChanges();
         }
+        public void EditCandidate(Candidate candidate)
+        {
+            context.Entry(candidate).State = EntityState.Modified;
+            base.SaveChanges();
+        }
+        public Candidate GetById(int id)
+        {
+            return context.Candidate.Find(id);
+        }
     }
 }
